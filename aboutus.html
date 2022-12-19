@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html><head>
+<title> Luther College : Our College </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> <!--Font tou Navigation Bar-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Search bar-->
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!--Carousel-->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Carousel-->	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!--Carousel-->
+	
+<link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet"><!--About Us & Header Font-->
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Dropdown menu-->
+	
+<link rel="stylesheet" type="text/css" href="page-layout.css"> <!--External CSS gia layout tou site-->	
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--Card dropdowns -->
+	
+
+<style>
+	
+* {
+  box-sizing: border-box;
+	padding: 0 4px;
+  }
+	
+body{
+     background-image: url("img/images/background_01.jpg");
+     background-repeat: repeat-y;
+     padding: 10px;
+	}
+	
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #14213D;
+  height:195px;
+}
+
+.header h1 {
+  font-size: 70px;
+  color:white;
+  font-family: 'Spirax', cursive;
+}
+
+.header img{
+		float:left;
+	    margin:30px 0 0 15px;
+	    width:7%;
+	       }		  	
+	
+.navbar {
+   width:100%;
+   background:#FCA311;
+   overflow:hidden;
+   height:55px;
+   }
+ 
+	
+ul{
+   margin:0 0 0 30%;
+   list-style:none;
+  }
+
+li{
+   float:left;
+  }
+  
+.logo img{
+        position:absolute;
+	     }
+		  
+.navbar a{
+      width:120px;
+	  display:block;
+	  text-decoration:none;
+	  font-family: 'Acme', sans-serif;
+	  color:white;
+	  text-align:center;
+	  font-size:25px;
+	  margin:40px;
+	  }
+
+.dropdown {
+           float:left;
+		   margin-top:5px;
+           overflow: hidden;
+          }
+
+.dropdown .dropbtn {
+                    font-size: 25px; 
+                    font-family: 'Acme', sans-serif;					
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 8px 20px;
+                    background-color: inherit;
+                   }
+
+
+.navbar a:hover {
+                    background:#BFC0C0;
+		            transition:0.7s;
+		            height:96px;  
+		        }				
+				
+.dropdown a:hover {
+                    background:#BFC0C0;
+		            height:51px;
+		          }				
+
+.dropdown:hover .dropbtn {
+                           background:#BFC0C0;		                   
+		                   height:51px;
+						   transition:0.8s;	                       
+		                 }  
+		   
+.dropdown-content {
+                   display: none;
+                   position: absolute;
+                   min-width: 6px;
+                   box-shadow: 1px 8px 66px 3px rgba(0,0,0,0.2);
+                  }
+
+.dropdown-content a {
+                     color: white;
+                     text-decoration: none;
+                     display: block;
+                     text-align: center;
+					 font-size:18px;
+					 background:#929292;
+                    }
+
+.dropdown-content a:hover {
+                           background-color: #BFC0C0;
+	                       margin-top:5px;
+	                       margin-bottom:3px;
+                          }
+
+.dropdown:hover .dropdown-content {
+                                   display: block;
+								   height:70%;
+								   text-align:center;
+	                               width:9.2%;
+                                  }
+		   
+.search-container {
+                   float: center; 
+                  }
+
+.search-container input[type=text] {
+                          padding: 6px;
+                          margin-top: 8px;
+                          font-size: 17px;
+                          border: none;
+	                      width: 170px;
+                          box-sizing: border-box;
+                          border: 2px solid #ccc;
+                          border-radius: 4px;
+                          font-size: 16px;
+                          background-color: white;
+                          background-position: 5px 5px; 
+                          background-repeat: no-repeat;
+                          padding: 12px 10px 12px 40px;
+                          -webkit-transition: width 0.4s ease-in-out;
+                          transition: width 0.4s ease-in-out;
+                                    }
+	
+	
+input[type=text]:focus {
+                        width: 100%;
+                       }
+						 
+						  
+.navbar a, .navbar input[type=text], .navbar .search-container button {
+                                                                      float: none;
+                                                                      display: block;
+                                                                      text-align: left;
+                                                                      width: 100%;
+                                                                      margin: 0;
+                                                                      padding: 14px;
+                                                                      }
+							  
+</style>
+
+</head>
+
+<body>
+	
+<div class="header">
+	
+<img style="width:9%" src="img/images/logo.png">
+	
+  <h1 style="margin-top:24px">Welcome to Luther College library website!</h1>
+  <p style="font-size:20px;color:lightgray;margin-top:34px"><i>"Nothing is pleasanter than exploring a library"</i></p>
+</div>	
+
+<div class="navbar">
+    <ul>
+
+<li><a href = "index.html"> Home</a></li>
+
+	   <li><a href = "aboutus.html"> Our College</a></li>	
+
+	   <li><a href = "student.html" > Student of the month</a></li>  
+
+<div class="dropdown">
+         <button class="dropbtn">Categories 
+            <i class="fa fa-caret-down"></i>
+            </button>
+       <div class="dropdown-content">
+       <a href="https://books.goalkicker.com/PythonBook/">Python</a>
+       <a href="https://goalkicker.com/JavaBook/">Java</a>
+       <a href="#">C++</a>
+	   <a href="#">C#</a>
+	   <a href="#">HTML</a>
+	   <a href="#">CSS</a>
+	   <a href="#">Bootstrap</a>
+	   <a href="#">JavaScript</a>
+	   <a href="#">WordPress</a>
+	   <a href="#">SQL</a>
+	   <a href="#">PHP</a>
+	   <a href="#">Android</a>
+       </div>
+</div> 		
+</div>
+
+
+<br>
+<br>
+<br>
+	
+<div class="row">
+	<div class="carouselcolumn">
+	<div class="card">
+		
+		<div class="container">
+   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol style="margin-left:0px" class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/images/carousel1.jpg" alt="library1" style="width:100%;height:400px;">
+      </div>
+
+      <div class="item">
+        <img src="img/images/books-1281581_1920.jpg" alt="library2" style="width:100%;height:400px;">
+      </div>
+    
+      <div class="item">
+        <img src="img/images/library-1147815_1920.jpg" alt="library3" style="width:100%;height:400px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>	
+</div>
+</div>
+	<div style="border-radius:15px;border: 2px solid #FCA311;margin-bottom:40px" class="rightcolumn">
+    <div class="card">
+		
+      <br>		
+		
+      <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">   
+            </form>
+      </div>
+		
+		<br>
+		<br>
+		
+	    <p>Zipcode : 313131</p>
+		<br>
+		<p>For any questions,our email address is:</p>
+        <h4 style="font-size:18px;">luthercollegelibrary@gov.com</h4>
+	 
+		<br>
+		<br>
+		<br>
+	
+    </div>
+
+    <div class="card">
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.152503170037!2d-91.80844198428157!3d43.31106688250408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fbad631acdf1e7%3A0x89d68caf08fa053c!2sLuther%20College!5e0!3m2!1sen!2sgr!4v1592764198453!5m2!1sen!2sgr" width="240" height="320" frameborder="0" style="border:2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     
+    </div>
+  </div>
+
+  <div class="aboutuscolumn">
+    <div class="card">
+     
+		<h1 style="color:white;font-size:60px;margin-left:380px;font-family: 'Spirax', cursive;">Learn about us</h1>
+      <p style="color:white;background-color:#575757;border-radius:15px;border: 2px solid #FCA311;font-size:25px;font-family:Times New Roman">Luther College is a private liberal arts college in Decorah, Iowa. Established as a Lutheran seminary in 1861 by Norwegian immigrants, the school today is an institution of the Evangelical Lutheran Church in America.
+		On October 10, 1857, the Norwegian Evangelical Lutheran Church (NELC) created a seminary to supply ministers for Norwegian congregations in the Upper Midwest. Until the seminary was established in 1861, students studied at Concordia Seminary in St. Louis, Missouri. On October 14, 1859, the Rev. Peter Laurentius Larsen was appointed professor to the Norwegian students at Concordia by the NELC.
+		  <br>
+		  <br>
+
+Upon the closing of the seminary in April 1861, at the start of the Civil War, the NELC decided to open its own college that fall in a former parsonage at Halfway Creek, Wisconsin, just north of La Crosse, Wisconsin, and close to present day Holmen, Wisconsin. On September 1, 1861, classes officially began with an enrollment of 16. The following year classes moved to Decorah, Iowa, with NELC Pastor Ulrik Vilhelm Koren successfully arranging the college's relocation and permanent settlement.
+		  <br>
+		  <br>
+
+In 1866, a group of students signed a "bill of rights" criticizing the rigid schedule, the rules about going downtown, the lack of windows in some of the sleeping rooms, and the woodcutting and shoe-shining chores, concluding that "there was not enough freedom."[4] The leader of the group, 18-year-old Rasmus Anderson, was expelled.[4] This event was viewed as a rebellion and "the worst of sins" by the pastors assembled in a pastoral conference shortly after.
+		  <br>
+		  <br>
+		  
+In 1905, Dr. Carlo A. Sperati, an 1888 graduate of Luther, became the music director of the college and developed the Luther College Concert Band, founded in 1878, on the model of the wind ensemble pioneered by John Philip Sousa. Under Sperati, the band undertook several tours of Europe, their first in 1914, earning international acclaim for their musical talent. Sperati remained on the faculty until his death in 1945.
+		  <br>
+		  <br>
+
+In 1932, Luther College dropped its mandatory study of the classics and embraced the modern concept of the liberal arts education. Due to financial constraints associated with the Great Depression, the college decided to admit women as students in 1936. During the 1960s Luther constructed several new campus buildings and adopted a 4-1-4 semester schedule.
+		  <br>
+		  <br>
+
+
+Luther's current Main Building is the third to stand in the same location; fire destroyed the previous two.
+In 1964, Luther's museum collection became separate from the college and was established as the Norwegian-American Museum. Now known as Vesterheim Norwegian-American Museum, it is the largest and most comprehensive museum in the United States devoted to a single immigrant group. Nordic Fest, started in 1967, grew from Luther College Women's Club's annual celebration of Norwegian Constitution Day.</p>
+      
+    </div>
+ </div>
+
+</div>
+	
+
+<!--Pernw to rightcolumn,tou allazw tis diastaseis kai etsi to metatrepw se footer-->
+ <div style="width:100%;height:90px; " class="rightcolumn">
+    <div class="card">
+  
+	<br>
+        <h4>COPYRIGHT © 2019 V.K™</h4>
+  </div>
+</div>
+</body>
+</html>

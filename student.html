@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Luther College : Student of the Month </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"> <!--Font tou Navigation Bar-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Search bar-->
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet"><!--About Us & Header Font-->
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Dropdown menu-->
+	
+<link rel="stylesheet" type="text/css" href="page-layout.css"> <!--External CSS gia layout tou site-->	
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!--Card dropdowns -->
+
+<style>
+	
+* {
+  box-sizing: border-box;
+  padding: 0 4px;
+}
+	
+body{
+     background-image: url("img/images/background_01.jpg");
+     background-repeat: repeat-y;
+     padding: 10px;
+	}
+	
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #14213D;
+}
+
+.header h1 {
+  font-size: 70px;
+  color:white;
+  font-family: 'Spirax', cursive
+}
+
+.header img{
+		float:left;
+	    margin:30px 0 0 15px;
+	    width:7%;
+	       }	
+	
+.navbar {
+   width:100%;
+   background:#FCA311;
+   overflow:hidden;
+   height:55px;
+   border-radius: 4px;
+   } 
+	
+ul{
+   margin:0 0 0 30%;
+   list-style:none;
+  }
+
+li{
+   float:left;
+  }
+  
+.logo img{
+        position:absolute;
+		margin-top:15px;
+		margin-left:40px;
+	  }
+		  
+.navbar a{
+      width:120px;
+	  display:block;
+	  text-decoration:none;
+	  font-family: 'Acme', sans-serif;
+	  color:white;
+	  text-align:center;
+	  font-size:25px;
+	  margin:40px;
+	  }
+
+.dropdown {
+           float:left;
+		   margin-top:5px;
+           overflow: hidden;
+          }
+
+.dropdown .dropbtn {
+                    font-size: 25px; 
+                    font-family: 'Acme', sans-serif;					
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 8px 20px;
+                    background-color: inherit;                
+                   }
+
+.navbar a:hover {
+                    background:#BFC0C0;
+		            transition:0.7s;
+		            height:94px;  
+		        }			
+				
+.dropdown a:hover {
+                    background:#BFC0C0;
+		            height:51px;
+		          }				
+
+.dropdown:hover .dropbtn {
+                           background:#BFC0C0;		                   
+		                   height:51px;
+						   transition:0.8s;
+		                 }  
+		   
+.dropdown-content {
+                   display: none;
+                   position: absolute;
+                   min-width: 6px;
+                   box-shadow: 1px 8px 66px 3px rgba(0,0,0,0.2);
+                  }
+
+.dropdown-content a {
+                     color: white;
+                     text-decoration: none;
+                     display: block;
+                     text-align: center;
+					 font-size:18px;
+					 background:#929292;
+                    }
+
+.dropdown-content a:hover {
+                           background-color: #BFC0C0;
+	                       margin-top:5px;
+	                       margin-bottom:3px;
+                          }
+
+.dropdown:hover .dropdown-content {
+                                   display: block;
+								   height:70%;
+								   text-align:center;
+	                               width:9.2%;
+                                  }
+		   
+.search-container {
+                   float: center;
+                   
+                  }
+
+.search-container input[type=text] {
+                          padding: 6px;
+                          margin-top: 8px;
+                          font-size: 17px;
+                          border: none;
+	                      width: 170px;
+                          box-sizing: border-box;
+                          border: 2px solid #ccc;
+                          border-radius: 4px;
+                          font-size: 16px;
+                          background-color: white;
+                          background-position: 5px 5px; 
+                          background-repeat: no-repeat;
+                          padding: 12px 10px 12px 40px;
+                          -webkit-transition: width 0.4s ease-in-out;
+                          transition: width 0.4s ease-in-out;
+                                   }
+	
+	
+input[type=text]:focus {
+                    width: 100%;
+                       }
+									  
+.navbar a, .navbar input[type=text], .navbar .search-container button {
+                                                                      float: none;
+                                                                      display: block;
+                                                                      text-align: left;
+                                                                      width: 100%;
+                                                                      margin: 0;
+                                                                      padding: 14px;
+                                                                      }
+		
+table {
+  font-family:'Acme', sans-serif;
+  border-collapse: collapse;
+  width: 150%;
+  color:white;
+  background-color: #292929;
+  border-radius:15px ;
+  border: 2px solid #FCA311;
+  font-size:25px;
+      }
+
+td, th {
+  border: 1px solid #FCA311;
+  text-align: center;
+  padding: 23px;	
+       }
+							  
+</style>
+</head>
+
+	
+<body>
+	
+<div class="header">
+	
+<img style="width:9%" src="img/images/logo.png">
+	
+   <h1>Welcome to Luther College library website!</h1>
+   <p style="font-size:20px;color:lightgray";><i>"Nothing is pleasanter than exploring a library"</i></p>
+</div>	
+
+<div>
+
+<div class="navbar">
+<nav>
+    <ul>
+
+<li><a href = "index.html"> Home</a></li>
+
+	   <li><a href = "aboutus.html"> Our College</a></li>	
+
+	   <li><a href = "student.html" > Student of the month</a></li>  
+
+<div class="dropdown">
+         <button class="dropbtn">Categories 
+            <i class="fa fa-caret-down"></i>
+         </button>
+       <div class="dropdown-content">
+       <a href="https://books.goalkicker.com/PythonBook/">Python</a>
+       <a href="https://goalkicker.com/JavaBook/">Java</a>
+       <a href="#">C++</a>
+	   <a href="#">C#</a>
+	   <a href="#">HTML</a>
+	   <a href="#">CSS</a>
+	   <a href="#">Bootstrap</a>
+	   <a href="#">JavaScript</a>
+	   <a href="#">WordPress</a>
+	   <a href="#">SQL</a>
+	   <a href="#">PHP</a>
+	   <a href="#">Android</a>
+       </div>
+</div> 
+		
+</div>
+
+</div>	
+
+<br>
+<br>
+<br>	
+	
+<div class="row">
+  <div class="studentcolumn">
+    <div class="card">
+     
+		<h1 style="color:white;font-size:60px;margin-left:360px;font-family: 'Spirax', cursive;font-size:50px;text-align: center">Student of the Month</h1>
+    
+<table>
+  <tr>
+    <th>Place</th>
+    <th>Full Name</th>
+    <th>Rentals this month</th>
+  </tr>
+  <tr>
+    <td>1st</td>
+    <td>Maria Anders</td>
+    <td>41</td>
+  </tr>
+  <tr>
+    <td>2nd</td>
+    <td>Francisco Chang</td>
+    <td>38</td>
+  </tr>
+  <tr>
+    <td>3rd</td>
+    <td>Roland Mendel</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td>4th</td>
+    <td>Helen Bennett</td>
+    <td>29</td>
+  </tr>
+  <tr>
+    <td>5th</td>
+    <td>Yoshi Tannamuri</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>6th</td>
+    <td>Giovanni Rovelli</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>7th</td>
+    <td>Felix Cruz</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>8th</td>
+    <td>Sophia-Rose Richard</td>
+    <td>19</td>
+  </tr>
+  <tr>
+    <td>9th</td>
+    <td>Jodie Haas</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>10th</td>
+    <td>Josephine Steele</td>
+    <td>15</td>
+  </tr>
+</table>		
+
+<br>
+<br>
+				      
+    </div>
+  </div>
+</div>
+
+ <div style="border-radius:15px;border: 2px solid #FCA311" class="rightcolumn">
+    <div class="card">
+      <br>		
+		
+      <div class="search-container">
+            <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            
+  </form>
+</div>
+		<br>
+		<br>
+	    <p>Zipcode : 313131</p>
+		<br>
+		<p>For any questions,our email address is:</p>
+        <h4 style="font-size:18px;">luthercollegelibrary@gov.com</h4>
+	
+		
+    </div>
+    <div class="card">
+      
+    </div>
+    <div class="card">
+		 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.152503170037!2d-91.80844198428157!3d43.31106688250408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87fbad631acdf1e7%3A0x89d68caf08fa053c!2sLuther%20College!5e0!3m2!1sen!2sgr!4v1592764198453!5m2!1sen!2sgr" width="240" height="320" frameborder="0" style="border:2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     
+    </div>
+</div>
+
+	
+<!--Pernw to rightcolumn,tou allazw tis diastaseis kai etsi to metatrepw se footer-->
+ <div style="width:100%;height:90px; " class="rightcolumn">
+    
+  <div class="card">
+    
+	<br>
+        <h4>COPYRIGHT © 2019 V.K™</h4>
+  </div>
+ </div> 
+
+</body>
+</html>
